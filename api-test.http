@@ -1,0 +1,57 @@
+### Variables
+@baseUrl = http://localhost:3000
+@studentId = 1
+
+###############################################
+# ANNOUNCEMENTS
+###############################################
+
+### Get all announcements for student
+GET {{baseUrl}}/announcements/{{studentId}}
+
+###############################################
+# PROFILE
+###############################################
+
+### Get student profile
+GET {{baseUrl}}/profile/{{studentId}}
+
+###############################################
+# MESSAGES
+###############################################
+
+### Get all chats for student
+GET {{baseUrl}}/messages/{{studentId}}
+
+### Get messages from a specific chat
+GET {{baseUrl}}/messages/{{studentId}}/1
+
+###############################################
+# SCHEDULE
+###############################################
+
+### Get full schedule for student
+GET {{baseUrl}}/schedule/{{studentId}}
+
+### Get subject detail
+GET {{baseUrl}}/schedule/{{studentId}}/1
+
+### Get today's classes
+GET {{baseUrl}}/schedule/today/{{studentId}}
+
+### Get class status
+GET {{baseUrl}}/schedule/today/{{studentId}}/1
+
+###############################################
+# CREDITS
+###############################################
+
+### Get student credits
+GET {{baseUrl}}/credits/{{studentId}}
+
+###############################################
+# GRADES
+###############################################
+
+### Get student grades
+GET {{baseUrl}}/grade/{{studentId}}
